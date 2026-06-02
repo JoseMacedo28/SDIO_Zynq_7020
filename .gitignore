@@ -1,0 +1,25 @@
+# Archivos temporales y logs de Vivado/Vitis
+*.log
+*.jou
+*.str
+.Xil/
+.srcs/
+
+# Carpetas de salida e intermedias de compilación
+vivado_proj/*.cache/
+vivado_proj/*.hw/
+vivado_proj/*.ip_user_files/
+vivado_proj/*.runs/
+vivado_proj/*.sim/
+vivado_proj/*.gen/
+
+# Espacio de trabajo de Vitis (metadatos locales)
+vitis_workspace/.metadata/
+vitis_workspace/.Xil/
+vitis_workspace/RemoteSystemsTempFiles/
+**/bin/
+**/obj/
+
+# Archivos de respaldo del sistema operativo
+.DS_Store
+Thumbs.db
