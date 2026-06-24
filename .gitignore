@@ -1,25 +1,72 @@
-# Archivos temporales y logs de Vivado/Vitis
+# ============================================================
+# Vivado — solo se guardan .xpr y sources
+# ============================================================
+vivado_proj/*.cache/
+vivado_proj/*.runs/
+vivado_proj/*.hw/
+vivado_proj/*.ip_user_files/
+vivado_proj/*.gen/
+vivado_proj/*.sim/
+vivado_proj/**/.Xil/
+.Xil/
+
+# Logs y journals (Vivado/Vitis)
 *.log
 *.jou
 *.str
-.Xil/
-.srcs/
+*.debug
 
-# Carpetas de salida e intermedias de compilación
-vivado_proj/*.cache/
-vivado_proj/*.hw/
-vivado_proj/*.ip_user_files/
-vivado_proj/*.runs/
-vivado_proj/*.sim/
-vivado_proj/*.gen/
+# ============================================================
+# Vitis Unificado — IDE y metadata
+# ============================================================
+_ide/.wsdata/
+_ide/logs/
+**/.buildstatus
+**/.hash-map.txt
+**/.rigel_lopper/
+**/workspace_journal_*.py
 
-# Espacio de trabajo de Vitis (metadatos locales)
 vitis_workspace/.metadata/
 vitis_workspace/.Xil/
 vitis_workspace/RemoteSystemsTempFiles/
+
+# ============================================================
+# CMake (el problema Windows↔Linux)
+# ============================================================
+**/CMakeCache.txt
+**/CMakeFiles/
+**/*.ninja
+**/.ninja_deps
+**/.ninja_log
+**/cmake_install.cmake
+**/install_manifest.txt
+**/compile_commands.json
+
+# ============================================================
+# Binarios compilados
+# ============================================================
+**/build/
+**/export/
+**/Debug/
+**/Release/
 **/bin/
 **/obj/
+**/*.elf
+**/*.elf.size
+**/*.bit
+**/*.a
+**/*.o
+**/*.obj
 
-# Archivos de respaldo del sistema operativo
+# ============================================================
+# Clangd cache (otro problemático en cross-platform)
+# ============================================================
+**/.cache/
+**/.clangd
+
+# ============================================================
+# OS
+# ============================================================
 .DS_Store
 Thumbs.db
+desktop.ini
