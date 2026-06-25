@@ -1,0 +1,4 @@
+domain_path: /home/huezzo/Documents/LIESE/SDIO_Zynq_7020/sw/vitis_workspace/zybo_sdio_platform/zynq_fsbl/zynq_fsbl_bsp
+app_src_dir: /mnt/externo/Vi/Vitis/2024.2/data/embeddedsw/lib/sw_apps/zynq_fsbl
+template: zynq_fsbl
+lang: c
