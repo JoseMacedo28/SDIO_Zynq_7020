@@ -15,3 +15,14 @@ status = domain.set_lib(lib_name="xilffs", path="/mnt/externo/Vi/Vitis/2024.2/da
 
 status = domain.regenerate()
 
+status = platform.build()
+
+comp = client.get_component(name="sdio_polling")
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+vitis.dispose()
+
