@@ -357,7 +357,7 @@ lib_config:
       name: XILFFS_use_lfn
       permission: read_write
       type: integer
-      value: '0'
+      value: '1'
       default: '0'
       options:
       - '0'

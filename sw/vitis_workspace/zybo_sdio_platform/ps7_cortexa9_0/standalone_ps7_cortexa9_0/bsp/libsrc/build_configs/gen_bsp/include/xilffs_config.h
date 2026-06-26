@@ -17,7 +17,7 @@
 
 /* #undef FILE_SYSTEM_READ_ONLY */
 /* #undef FILE_SYSTEM_FS_EXFAT */
-/* #undef FILE_SYSTEM_USE_LFN */
+#define FILE_SYSTEM_USE_LFN 1
 #define FILE_SYSTEM_USE_MKFS  
 /* #undef FILE_SYSTEM_USE_TRIM */
 /* #undef FILE_SYSTEM_MULTI_PARTITION */
